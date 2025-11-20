@@ -5,246 +5,197 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accelerando - Privacy Policy</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         :root {
-            --primary: #667eea;
-            --secondary: #764ba2;
-            --dark: #1a202c;
-            --light: #f7fafc;
-            --gray: #4a5568;
-            --bg-primary: #ffffff;
-            --bg-secondary: #f7fafc;
-            --text-primary: #1a202c;
-            --text-secondary: #4a5568;
+            --primary: #667eea; --secondary: #764ba2; --dark: #1a202c; --light: #f7fafc;
+            --gray: #4a5568; --bg-primary: #ffffff; --bg-secondary: #f7fafc;
+            --text-primary: #1a202c; --text-secondary: #4a5568;
         }
-
         @media (prefers-color-scheme: dark) {
             :root {
-                --dark: #f7fafc;
-                --light: #1a202c;
-                --gray: #a0aec0;
-                --bg-primary: #1a202c;
-                --bg-secondary: #2d3748;
-                --text-primary: #f7fafc;
-                --text-secondary: #a0aec0;
+                --dark: #f7fafc; --light: #1a202c; --gray: #a0aec0;
+                --bg-primary: #1a202c; --bg-secondary: #2d3748;
+                --text-primary: #f7fafc; --text-secondary: #a0aec0;
             }
         }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
+        html { scroll-behavior: smooth; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', sans-serif;
-            line-height: 1.6;
-            color: var(--text-primary);
-            background: var(--bg-secondary);
-            padding: 2rem;
+            line-height: 1.6; color: var(--text-primary); background: var(--bg-secondary); padding: 2rem;
         }
-
-        /* Privacy Policy Section */
-        section {
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
+        html[dir="rtl"] body { text-align: right; }
+        html[dir="rtl"] .privacy-content ul { margin-left: 0; margin-right: 2rem; }
+        section { max-width: 900px; margin: 0 auto; }
         .privacy-content {
-            background: var(--bg-primary);
-            padding: 3rem;
-            border-radius: 12px;
+            background: var(--bg-primary); padding: 3rem; border-radius: 12px;
             box-shadow: 0 4px 20px rgba(0,0,0,0.1);
         }
-
-        @media (prefers-color-scheme: dark) {
-            .privacy-content {
-                box-shadow: 0 4px 20px rgba(0,0,0,0.4);
-            }
+        @media (prefers-color-scheme: dark) { .privacy-content { box-shadow: 0 4px 20px rgba(0,0,0,0.4); } }
+        .privacy-content h1 { color: var(--primary); font-size: 2.5rem; margin-bottom: 2rem; }
+        .privacy-content h2 { color: var(--primary); margin-top: 2.5rem; margin-bottom: 1rem; font-size: 1.8rem; }
+        .privacy-content h3 { color: var(--text-primary); margin-top: 1.5rem; margin-bottom: 0.8rem; font-size: 1.3rem; }
+        .privacy-content p { color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.8; }
+        .privacy-content ul { margin: 1rem 0 1.5rem 2rem; color: var(--text-secondary); line-height: 1.8; }
+        .privacy-content li { margin-bottom: 0.5rem; }
+        .privacy-content strong { color: var(--text-primary); }
+        .privacy-content a { color: var(--primary); text-decoration: none; transition: opacity 0.3s; }
+        .privacy-content a:hover { opacity: 0.8; }
+        .language-switcher {
+            position: fixed; top: 1rem; right: 1rem; z-index: 1000;
         }
-
-        .privacy-content h1 {
-            color: var(--primary);
-            font-size: 2.5rem;
-            margin-bottom: 2rem;
+        .language-switcher select {
+            appearance: none; background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white; border: none; padding: 0.5rem 2rem 0.5rem 1rem; border-radius: 8px;
+            font-size: 0.9rem; font-weight: 500; cursor: pointer;
         }
-
-        .privacy-content h2 {
-            color: var(--primary);
-            margin-top: 2.5rem;
-            margin-bottom: 1rem;
-            font-size: 1.8rem;
+        .language-switcher::after {
+            content: '▼'; position: absolute; right: 0.7rem; top: 50%; transform: translateY(-50%);
+            color: white; font-size: 0.6rem; pointer-events: none;
         }
-
-        .privacy-content h3 {
-            color: var(--text-primary);
-            margin-top: 1.5rem;
-            margin-bottom: 0.8rem;
-            font-size: 1.3rem;
+        .language-switcher select option {
+        background: var(--bg-primary);
+        color: var(--text-primary);
         }
-
-        .privacy-content p {
-            color: var(--text-secondary);
-            margin-bottom: 1rem;
-            line-height: 1.8;
-        }
-
-        .privacy-content ul {
-            margin: 1rem 0 1.5rem 2rem;
-            color: var(--text-secondary);
-            line-height: 1.8;
-        }
-
-        .privacy-content li {
-            margin-bottom: 0.5rem;
-        }
-
-        .privacy-content strong {
-            color: var(--text-primary);
-        }
-
-        .privacy-content a {
-            color: var(--primary);
-            text-decoration: none;
-            transition: opacity 0.3s;
-        }
-
-        .privacy-content a:hover {
-            opacity: 0.8;
-        }
-
-        /* Responsive */
         @media (max-width: 768px) {
-            body {
-                padding: 1rem;
-            }
-
-            .privacy-content {
-                padding: 2rem;
-            }
-
-            .privacy-content h1 {
-                font-size: 2rem;
-            }
-
-            .privacy-content h2 {
-                font-size: 1.5rem;
-            }
-
-            .privacy-content h3 {
-                font-size: 1.2rem;
-            }
+            body { padding: 1rem; padding-top: 4rem; }
+            .privacy-content { padding: 2rem; }
+            .privacy-content h1 { font-size: 2rem; }
+            .privacy-content h2 { font-size: 1.5rem; }
+            .privacy-content h3 { font-size: 1.2rem; }
         }
     </style>
 </head>
 <body>
-    <!-- Privacy Policy Section -->
+    <div class="language-switcher">
+        <select id="langSelect" onchange="setLanguage(this.value)">
+            <option value="en">English</option>
+            <option value="ar">العربية</option>
+            <option value="zh">中文</option>
+            <option value="nl">Nederlands</option>
+            <option value="fr">Français</option>
+            <option value="de">Deutsch</option>
+            <option value="hi">हिन्दी</option>
+            <option value="it">Italiano</option>
+            <option value="ja">日本語</option>
+            <option value="ko">한국어</option>
+            <option value="pl">Polski</option>
+            <option value="pt-BR">Português (BR)</option>
+            <option value="pt-PT">Português (PT)</option>
+            <option value="ru">Русский</option>
+            <option value="es">Español</option>
+            <option value="es-LA">Español (LA)</option>
+            <option value="sv">Svenska</option>
+        </select>
+    </div>
     <section>
         <div class="privacy-content">
-            <h1>Privacy Policy for Accelerando</h1>
+            <h1 data-i18n="title">Privacy Policy for Accelerando</h1>
+            <p><strong data-i18n="developer">Developer:</strong> ALBEDO JACEK FRANKOWSKI</p>
+            <p><strong data-i18n="updated">Last Updated:</strong> November 6, 2025</p>
 
-            <p><strong>Developer:</strong> ALBEDO JACEK FRANKOWSKI</p>
-            <p><strong>Last Updated:</strong> November 6, 2025</p>
+            <h2 data-i18n="intro_t">Introduction</h2>
+            <p data-i18n="intro_p">Accelerando ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how our mobile application handles information when you use our music player app that adjusts playback speed based on your movement.</p>
 
-            <h2>Introduction</h2>
-            <p>Accelerando ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how our mobile application handles information when you use our music player app that adjusts playback speed based on your movement.</p>
-
-            <h2>Information We Collect</h2>
-
-            <h3>Location Data</h3>
-            <p>Accelerando collects <strong>precise location data</strong> (GPS coordinates and movement speed) to provide the core functionality of the app - adjusting music playback speed in real-time based on your movement pace.</p>
-
-            <h3>Audio Files</h3>
-            <p>The app accesses <strong>audio files</strong> that you explicitly select from your device to play music. We only access files you choose to add to the app.</p>
-
-            <h3>Usage Data</h3>
-            <p>The app stores locally:</p>
+            <h2 data-i18n="collect_t">Information We Collect</h2>
+            <h3 data-i18n="location_t">Location Data</h3>
+            <p data-i18n="location_p">Accelerando collects precise location data (GPS coordinates and movement speed) to provide the core functionality of the app - adjusting music playback speed in real-time based on your movement pace.</p>
+            <h3 data-i18n="audio_t">Audio Files</h3>
+            <p data-i18n="audio_p">The app accesses audio files that you explicitly select from your device to play music. We only access files you choose to add to the app.</p>
+            <h3 data-i18n="usage_t">Usage Data</h3>
+            <p data-i18n="usage_p">The app stores locally:</p>
             <ul>
-                <li>Your playlist configuration</li>
-                <li>Preferred speed settings (running, cycling, driving presets)</li>
-                <li>Last played track information</li>
+                <li data-i18n="usage_1">Your playlist configuration</li>
+                <li data-i18n="usage_2">Preferred speed settings (running, cycling, driving presets)</li>
+                <li data-i18n="usage_3">Last played track information</li>
             </ul>
 
-            <h2>How We Use Your Information</h2>
-
-            <p>Your location data is used <strong>exclusively</strong> for:</p>
+            <h2 data-i18n="how_use_t">How We Use Your Information</h2>
+            <p data-i18n="how_use_loc">Your location data is used exclusively for:</p>
             <ul>
-                <li>Calculating your current movement speed (running, cycling, or driving)</li>
-                <li>Adjusting music playback speed in real-time to match your pace</li>
-                <li>Providing the core functionality of the app</li>
+                <li data-i18n="use_loc_1">Calculating your current movement speed (running, cycling, or driving)</li>
+                <li data-i18n="use_loc_2">Adjusting music playback speed in real-time to match your pace</li>
+                <li data-i18n="use_loc_3">Providing the core functionality of the app</li>
+            </ul>
+            <p data-i18n="how_use_audio">Your audio files are used exclusively for:</p>
+            <ul>
+                <li data-i18n="use_audio_1">Playing music through the app's audio player</li>
+                <li data-i18n="use_audio_2">Applying speed adjustments to playback</li>
             </ul>
 
-            <p>Your audio files are used <strong>exclusively</strong> for:</p>
+            <h2 data-i18n="storage_t">Data Storage and Processing</h2>
+            <p><strong data-i18n="storage_main">All data processing happens locally on your device.</strong></p>
             <ul>
-                <li>Playing music through the app's audio player</li>
-                <li>Applying speed adjustments to playback</li>
+                <li data-i18n="storage_1">Location data is processed in real-time and is not stored on your device or transmitted anywhere</li>
+                <li data-i18n="storage_2">Audio files remain on your device; we do not upload, copy, or transmit them</li>
+                <li data-i18n="storage_3">Playlist and preferences are stored locally on your device only</li>
+                <li data-i18n="storage_4">We do not have servers that collect or store your data</li>
+                <li data-i18n="storage_5">We do not transmit any data to third parties</li>
             </ul>
 
-            <h2>Data Storage and Processing</h2>
-
-            <p><strong>All data processing happens locally on your device.</strong></p>
-
+            <h2 data-i18n="sharing_t">Data Sharing</h2>
+            <p><strong data-i18n="sharing_main">We do not share, sell, or transmit any of your data to third parties.</strong></p>
             <ul>
-                <li>Location data is processed in real-time and <strong>is not stored</strong> on your device or transmitted anywhere</li>
-                <li>Audio files remain on your device; we do not upload, copy, or transmit them</li>
-                <li>Playlist and preferences are stored <strong>locally on your device only</strong></li>
-                <li>We do not have servers that collect or store your data</li>
-                <li>We do not transmit any data to third parties</li>
+                <li data-i18n="sharing_1">No location data leaves your device</li>
+                <li data-i18n="sharing_2">No audio files are uploaded or shared</li>
+                <li data-i18n="sharing_3">No usage analytics are collected or transmitted</li>
+                <li data-i18n="sharing_4">We do not use third-party analytics services</li>
+                <li data-i18n="sharing_5">We do not serve advertisements</li>
             </ul>
 
-            <h2>Data Sharing</h2>
-
-            <p><strong>We do not share, sell, or transmit any of your data to third parties.</strong></p>
-
+            <h2 data-i18n="rights_t">Your Rights and Choices</h2>
+            <p data-i18n="rights_p">You have full control over your data:</p>
             <ul>
-                <li>No location data leaves your device</li>
-                <li>No audio files are uploaded or shared</li>
-                <li>No usage analytics are collected or transmitted</li>
-                <li>We do not use third-party analytics services</li>
-                <li>We do not serve advertisements</li>
+                <li><strong data-i18n="rights_loc">Location Access:</strong> <span data-i18n="rights_loc_d">You can revoke location permissions at any time through system Settings → Accelerando → Location. Note that this will disable the core functionality of the app.</span></li>
+                <li><strong data-i18n="rights_audio">Audio Files:</strong> <span data-i18n="rights_audio_d">You control which files the app can access through system File picker. You can remove files from playlists at any time.</span></li>
+                <li><strong data-i18n="rights_delete">Data Deletion:</strong> <span data-i18n="rights_delete_d">All app data is stored locally on your device. Deleting the app will permanently remove all associated data.</span></li>
             </ul>
 
-            <h2>Your Rights and Choices</h2>
+            <h2 data-i18n="background_t">Background Location Usage</h2>
+            <p data-i18n="background_p">Accelerando uses location data in the background to continue adjusting music speed while you exercise with the app running in the background. This is essential for the app's core functionality during workouts.</p>
 
-            <p>You have full control over your data:</p>
+            <h2 data-i18n="children_t">Children's Privacy</h2>
+            <p data-i18n="children_p">Accelerando is not directed to children under the age of 13. We do not knowingly collect personal information from children under 13.</p>
 
-            <ul>
-                <li><strong>Location Access:</strong> You can revoke location permissions at any time through system Settings → Accelerando → Location. Note that this will disable the core functionality of the app.</li>
-                <li><strong>Audio Files:</strong> You control which files the app can access through system File picker. You can remove files from playlists at any time.</li>
-                <li><strong>Data Deletion:</strong> All app data is stored locally on your device. Deleting the app will permanently remove all associated data.</li>
-            </ul>
+            <h2 data-i18n="changes_t">Changes to This Privacy Policy</h2>
+            <p data-i18n="changes_p">We may update this Privacy Policy from time to time. We will notify you of any changes by updating the "Last Updated" date at the top of this Privacy Policy.</p>
 
-            <h2>Background Location Usage</h2>
+            <h2 data-i18n="security_t">Data Security</h2>
+            <p data-i18n="security_p">Your data security is important to us. Since all processing happens locally on your device and no data is transmitted, your information remains under your control and protected by your device's security measures.</p>
 
-            <p>Accelerando uses location data <strong>in the background</strong> to continue adjusting music speed while you exercise with the app running in the background. This is essential for the app's core functionality during workouts.</p>
-
-            <h2>Children's Privacy</h2>
-
-            <p>Accelerando is not directed to children under the age of 13. We do not knowingly collect personal information from children under 13.</p>
-
-            <h2>Changes to This Privacy Policy</h2>
-
-            <p>We may update this Privacy Policy from time to time. We will notify you of any changes by updating the "Last Updated" date at the top of this Privacy Policy.</p>
-
-            <h2>Data Security</h2>
-
-            <p>Your data security is important to us. Since all processing happens locally on your device and no data is transmitted, your information remains under your control and protected by your device's security measures.</p>
-
-            <h2>Contact Us</h2>
-
-            <p>If you have any questions about this Privacy Policy or our privacy practices, please contact us at:</p>
-
+            <h2 data-i18n="contact_t">Contact Us</h2>
+            <p data-i18n="contact_p">If you have any questions about this Privacy Policy or our privacy practices, please contact us at:</p>
             <p>
-            <strong>ALBEDO JACEK FRANKOWSKI</strong><br>
-            <strong>Rawicka 128, 60-113</strong><br>
-            <strong>Poznań, Poland</strong><br><br>
-            <strong>Email:</strong> <a href="mailto:contact@ajf.company">contact@ajf.company</a><br>
-            <strong>Website:</strong> <a href="https://ajf.company">ajf.company</a>
+                <strong>ALBEDO JACEK FRANKOWSKI</strong><br>
+                <strong>Rawicka 128, 60-113</strong><br>
+                <strong>Poznań, Poland</strong><br><br>
+                <strong data-i18n="email">Email:</strong> <a href="mailto:contact@ajf.company">contact@ajf.company</a><br>
+                <strong data-i18n="website">Website:</strong> <a href="https://ajf.company">ajf.company</a>
             </p>
         </div>
     </section>
+    <script src="accelerando_translations.js"></script>
+    <script>
+        function setLanguage(lang) {
+            const url = new URL(window.location);
+            url.searchParams.set('lang', lang);
+            window.history.pushState({}, '', url);
+            applyTranslations(lang);
+        }
+        function applyTranslations(lang) {
+            document.documentElement.lang = lang;
+            document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+            document.getElementById('langSelect').value = lang;
+            const t = translations[lang] || translations.en;
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (t[key]) el.textContent = t[key];
+            });
+        }
+        document.addEventListener('DOMContentLoaded', () => {
+            const params = new URLSearchParams(window.location.search);
+            const lang = params.get('lang') || 'en';
+            applyTranslations(lang);
+        });
+    </script>
 </body>
 </html>
