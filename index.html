@@ -1,450 +1,255 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AJF Software</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         :root {
-            --primary: #667eea;
-            --secondary: #764ba2;
-            --dark: #1a202c;
-            --light: #f7fafc;
-            --gray: #4a5568;
-            --bg-primary: #ffffff;
-            --bg-secondary: #f7fafc;
-            --text-primary: #1a202c;
-            --text-secondary: #4a5568;
+            --primary: #667eea; --secondary: #764ba2; --dark: #1a202c; --light: #f7fafc;
+            --gray: #4a5568; --bg-primary: #ffffff; --bg-secondary: #f7fafc;
+            --text-primary: #1a202c; --text-secondary: #4a5568;
         }
-
         @media (prefers-color-scheme: dark) {
             :root {
-                --dark: #f7fafc;
-                --light: #1a202c;
-                --gray: #a0aec0;
-                --bg-primary: #1a202c;
-                --bg-secondary: #2d3748;
-                --text-primary: #f7fafc;
-                --text-secondary: #a0aec0;
+                --dark: #f7fafc; --light: #1a202c; --gray: #a0aec0;
+                --bg-primary: #1a202c; --bg-secondary: #2d3748;
+                --text-primary: #f7fafc; --text-secondary: #a0aec0;
             }
         }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
+        html { scroll-behavior: smooth; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', sans-serif;
-            line-height: 1.6;
-            color: var(--text-primary);
-            background: var(--bg-secondary);
+            line-height: 1.6; color: var(--text-primary); background: var(--bg-secondary);
         }
-
-        /* Navigation */
+        html[dir="rtl"] body { text-align: right; }
+        html[dir="rtl"] nav ul { flex-direction: row-reverse; }
+        html[dir="rtl"] .privacy-content ul, html[dir="rtl"] .project-card ul { margin-left: 0; margin-right: 1.5rem; }
         nav {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            z-index: 1000;
+            position: fixed; top: 0; width: 100%; background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px); box-shadow: 0 2px 10px rgba(0,0,0,0.1); z-index: 1000;
         }
-
         @media (prefers-color-scheme: dark) {
-            nav {
-                background: rgba(26, 32, 44, 0.95);
-                box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-            }
+            nav { background: rgba(26, 32, 44, 0.95); box-shadow: 0 2px 10px rgba(0,0,0,0.3); }
         }
-
         nav .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0.5rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            max-width: 1200px; margin: 0 auto; padding: 0.5rem 2rem;
+            display: flex; justify-content: space-between; align-items: center;
         }
-
-        .logo {
-            height: 55px;
-            display: flex;
-            align-items: center;
+        .logo { height: 55px; display: flex; align-items: center; }
+        .logo img { height: 100%; width: auto; border-radius: 12px; }
+        .nav-right { display: flex; align-items: center; gap: 2rem; }
+        nav ul { display: flex; list-style: none; gap: 2rem; }
+        nav a { text-decoration: none; color: var(--text-secondary); font-weight: 500; transition: color 0.3s; }
+        nav a:hover { color: var(--primary); }
+        .language-switcher { position: relative; }
+        .language-switcher select {
+            appearance: none; background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white; border: none; padding: 0.5rem 2rem 0.5rem 1rem; border-radius: 8px;
+            font-size: 0.9rem; font-weight: 500; cursor: pointer; transition: opacity 0.3s;
         }
-
-        .logo img {
-            height: 100%;
-            width: auto;
-            border-radius: 12px;
+        .language-switcher select:hover { opacity: 0.9; }
+        .language-switcher::after {
+            content: '▼'; position: absolute; right: 0.7rem; top: 50%; transform: translateY(-50%);
+            color: white; font-size: 0.6rem; pointer-events: none;
         }
-
-        nav ul {
-            display: flex;
-            list-style: none;
-            gap: 2rem;
+        .language-switcher select option {
+        background: var(--bg-primary);
+        color: var(--text-primary);
         }
-
-        nav a {
-            text-decoration: none;
-            color: var(--text-secondary);
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: var(--primary);
-        }
-
-        /* Hero Section */
         .hero {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            min-height: 100vh; display: flex; align-items: center; justify-content: center;
             background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
-            color: white;
-            text-align: center;
-            padding: 6rem 2rem 2rem;
+            color: white; text-align: center; padding: 6rem 2rem 2rem;
         }
-
-        .hero h1 {
-            font-size: 3.5rem;
-            margin-bottom: 1rem;
-            animation: fadeInUp 0.8s;
-        }
-
-        .hero p {
-            font-size: 1.3rem;
-            opacity: 0.9;
-            animation: fadeInUp 1s;
-        }
-
-        /* Sections */
-        section {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 5rem 2rem;
-        }
-
+        .hero h1 { font-size: 3.5rem; margin-bottom: 1rem; animation: fadeInUp 0.8s; }
+        .hero p { font-size: 1.3rem; opacity: 0.9; animation: fadeInUp 1s; }
+        section { max-width: 1200px; margin: 0 auto; padding: 5rem 2rem; }
         h2 {
-            font-size: 2.5rem;
-            margin-bottom: 3rem;
-            text-align: center;
+            font-size: 2.5rem; margin-bottom: 3rem; text-align: center;
             background: linear-gradient(135deg, var(--primary), var(--secondary));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
         }
-
-        /* Projects */
-        .project-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
+        .project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 3rem; }
         .project-card {
-            background: var(--bg-primary);
-            border-radius: 12px;
-            padding: 2rem;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
+            background: var(--bg-primary); border-radius: 12px; padding: 2rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s;
         }
-
-        @media (prefers-color-scheme: dark) {
-            .project-card {
-                box-shadow: 0 4px 20px rgba(0,0,0,0.4);
-            }
-        }
-
-        .project-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
-        }
-
-        @media (prefers-color-scheme: dark) {
-            .project-card:hover {
-                box-shadow: 0 8px 30px rgba(0,0,0,0.5);
-            }
-        }
-
-        .project-card h3 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            color: var(--primary);
-        }
-
-        .project-card p {
-            color: var(--text-secondary);
-            margin-bottom: 1rem;
-        }
-
-        .tech-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            margin-top: 1rem;
-        }
-
-        .tag {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            color: white;
-            padding: 0.3rem 0.8rem;
-            border-radius: 20px;
-            font-size: 0.85rem;
-        }
-
-        /* Privacy Policy */
+        @media (prefers-color-scheme: dark) { .project-card { box-shadow: 0 4px 20px rgba(0,0,0,0.4); } }
+        .project-card:hover { transform: translateY(-5px); box-shadow: 0 8px 30px rgba(0,0,0,0.15); }
+        @media (prefers-color-scheme: dark) { .project-card:hover { box-shadow: 0 8px 30px rgba(0,0,0,0.5); } }
+        .project-card h3 { font-size: 1.5rem; margin-bottom: 1rem; color: var(--primary); }
+        .project-card p { color: var(--text-secondary); margin-bottom: 1rem; }
+        .project-card ul { color: var(--text-secondary); margin: 1.5rem 0 1.5rem 1.5rem; line-height: 1.8; }
         .privacy-content {
-            background: var(--bg-primary);
-            padding: 3rem;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-            max-width: 900px;
-            margin: 0 auto;
+            background: var(--bg-primary); padding: 3rem; border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1); max-width: 900px; margin: 0 auto;
         }
-
-        @media (prefers-color-scheme: dark) {
-            .privacy-content {
-                box-shadow: 0 4px 20px rgba(0,0,0,0.4);
-            }
-        }
-
-        .privacy-content h3 {
-            color: var(--primary);
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-            font-size: 1.3rem;
-        }
-
-        .privacy-content p {
-            color: var(--text-secondary);
-            margin-bottom: 1rem;
-            line-height: 1.8;
-        }
-
-        /* Contact */
-        .contact-container {
-            max-width: 600px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
+        @media (prefers-color-scheme: dark) { .privacy-content { box-shadow: 0 4px 20px rgba(0,0,0,0.4); } }
+        .privacy-content h3 { color: var(--primary); margin-top: 2rem; margin-bottom: 1rem; font-size: 1.3rem; }
+        .privacy-content p { color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.8; }
+        .contact-container { max-width: 600px; margin: 0 auto; text-align: center; }
         .contact-info {
-            background: var(--bg-primary);
-            padding: 3rem;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-            margin-top: 2rem;
+            background: var(--bg-primary); padding: 3rem; border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1); margin-top: 2rem;
         }
-
-        @media (prefers-color-scheme: dark) {
-            .contact-info {
-                box-shadow: 0 4px 20px rgba(0,0,0,0.4);
-            }
-        }
-
-        .contact-item {
-            margin: 1.5rem 0;
-        }
-
-        .contact-item strong {
-            display: block;
-            color: var(--primary);
-            font-size: 1.1rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .contact-item a {
-            color: var(--text-secondary);
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        .contact-item a:hover {
-            color: var(--primary);
-        }
-
-        /* Footer */
-        footer {
-            background: #1a202c;
-            color: #f7fafc;
-            text-align: center;
-            padding: 2rem;
-        }
-
-        @media (prefers-color-scheme: dark) {
-            footer {
-                background: #0d1117;
-            }
-        }
-
-        /* Animations */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        /* Responsive */
+        @media (prefers-color-scheme: dark) { .contact-info { box-shadow: 0 4px 20px rgba(0,0,0,0.4); } }
+        .contact-item { margin: 1.5rem 0; }
+        .contact-item strong { display: block; color: var(--primary); font-size: 1.1rem; margin-bottom: 0.5rem; }
+        .contact-item a { color: var(--text-secondary); text-decoration: none; transition: color 0.3s; }
+        .contact-item a:hover { color: var(--primary); }
+        footer { background: #1a202c; color: #f7fafc; text-align: center; padding: 2rem; }
+        @media (prefers-color-scheme: dark) { footer { background: #0d1117; } }
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
         @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-
-            .hero p {
-                font-size: 1.1rem;
-            }
-
-            nav ul {
-                gap: 1rem;
-            }
-
-            h2 {
-                font-size: 2rem;
-            }
-
-            .privacy-content {
-                padding: 2rem;
-            }
+            .hero h1 { font-size: 2.5rem; } .hero p { font-size: 1.1rem; }
+            nav .container { flex-wrap: wrap; gap: 1rem; }
+            .nav-right { flex-direction: column; gap: 1rem; width: 100%; }
+            nav ul { gap: 1rem; flex-wrap: wrap; justify-content: center; }
+            h2 { font-size: 2rem; } .privacy-content { padding: 2rem; }
         }
     </style>
 </head>
 <body>
-    <!-- Navigation -->
     <nav>
         <div class="container">
-            <div class="logo">
-                <img src="logo.png" alt="AJF Software Logo">
+            <div class="logo"><img src="logo.png" alt="AJF Software Logo"></div>
+            <div class="nav-right">
+                <ul>
+                    <li><a href="#products" data-i18n="nav_products">Products</a></li>
+                    <li><a href="#services" data-i18n="nav_services">Services</a></li>
+                    <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+                    <li><a href="#privacy" data-i18n="nav_privacy">Privacy Policy</a></li>
+                </ul>
+                <div class="language-switcher">
+                    <select id="langSelect" onchange="setLanguage(this.value)">
+                        <option value="en">English</option>
+                        <option value="ar">العربية</option>
+                        <option value="zh">中文</option>
+                        <option value="nl">Nederlands</option>
+                        <option value="fr">Français</option>
+                        <option value="de">Deutsch</option>
+                        <option value="hi">हिन्दी</option>
+                        <option value="it">Italiano</option>
+                        <option value="ja">日本語</option>
+                        <option value="ko">한국어</option>
+                        <option value="pl">Polski</option>
+                        <option value="pt-BR">Português (BR)</option>
+                        <option value="pt-PT">Português (PT)</option>
+                        <option value="ru">Русский</option>
+                        <option value="es">Español</option>
+                        <option value="es-LA">Español (LA)</option>
+                        <option value="sv">Svenska</option>
+                    </select>
+                </div>
             </div>
-            <ul>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#privacy">Privacy Policy</a></li>
-            </ul>
         </div>
     </nav>
-
-    <!-- Hero Section -->
     <div class="hero">
         <div>
             <h1>ALBEDO JACEK FRANKOWSKI</h1>
-            <p>Mobile Apps | Test Automation</p>
+            <p data-i18n="hero_subtitle">Mobile Apps | Test Automation</p>
         </div>
     </div>
-
-    <!-- Products Section -->
     <section id="products">
-        <h2>Products</h2>
+        <h2 data-i18n="nav_products">Products</h2>
         <div class="project-grid">
             <div class="project-card">
-                <h3>Products Coming Soon</h3>
-                <p>Currently working on innovative iOS applications that solve real-world problems. Stay tuned for exciting releases!</p>
+                <h3 data-i18n="products_title">Products Coming Soon</h3>
+                <p data-i18n="products_desc">Currently working on innovative iOS applications that solve real-world problems. Stay tuned for exciting releases!</p>
             </div>
         </div>
     </section>
-
-    <!-- Services Section -->
     <section id="services">
-        <h2>Services</h2>
+        <h2 data-i18n="nav_services">Services</h2>
         <div class="project-grid">
             <div class="project-card">
-                <h3>Test Automation</h3>
-                <p>Professional test automation services for all types of software:</p>
-                <ul style="color: var(--text-secondary); margin: 1.5rem 0 1.5rem 1.5rem; line-height: 1.8;">
-                    <li><strong>Web Applications</strong> - End-to-end testing, UI automation</li>
-                    <li><strong>Mobile Apps</strong> - iOS and Android test automation</li>
-                    <li><strong>API Testing</strong> - Backend services and microservices</li>
-                    <li><strong>Performance/Load Testing</strong> - Response time and server capacity</li>
-                    <li><strong>Desktop Applications</strong> - Cross-platform automation</li>
-                    <li><strong>CI/CD Integration</strong> - Automated testing pipelines</li>
-                    <li><strong>Quality Management</strong> - Software quality procedures for company</li>
+                <h3 data-i18n="services_title">Test Automation</h3>
+                <p data-i18n="services_desc">Professional test automation services for all types of software:</p>
+                <ul>
+                    <li><strong data-i18n="svc_web">Web Applications</strong> - <span data-i18n="svc_web_d">End-to-end testing, UI automation</span></li>
+                    <li><strong data-i18n="svc_mobile">Mobile Apps</strong> - <span data-i18n="svc_mobile_d">iOS and Android test automation</span></li>
+                    <li><strong data-i18n="svc_api">API Testing</strong> - <span data-i18n="svc_api_d">Backend services and microservices</span></li>
+                    <li><strong data-i18n="svc_perf">Performance/Load Testing</strong> - <span data-i18n="svc_perf_d">Response time and server capacity</span></li>
+                    <li><strong data-i18n="svc_desk">Desktop Applications</strong> - <span data-i18n="svc_desk_d">Cross-platform automation</span></li>
+                    <li><strong data-i18n="svc_cicd">CI/CD Integration</strong> - <span data-i18n="svc_cicd_d">Automated testing pipelines</span></li>
+                    <li><strong data-i18n="svc_qual">Quality Management</strong> - <span data-i18n="svc_qual_d">Software quality procedures for company</span></li>
                 </ul>
-                <p>Whether the need is to implement test automation from scratch or improve existing test coverage, reliable, maintainable, and efficient automation solutions are available.</p>
+                <p data-i18n="services_end">Whether the need is to implement test automation from scratch or improve existing test coverage, reliable, maintainable, and efficient automation solutions are available.</p>
             </div>
         </div>
     </section>
-
-    <!-- Contact Section -->
     <section id="contact">
-        <h2>Contact</h2>
+        <h2 data-i18n="nav_contact">Contact</h2>
         <div class="contact-container">
-            <p style="color: var(--text-secondary); font-size: 1.1rem; margin-bottom: 2rem;">
-                Feel free to reach out for collaborations, questions, or just to say hello!
-            </p>
+            <p style="color: var(--text-secondary); font-size: 1.1rem; margin-bottom: 2rem;" data-i18n="contact_intro">Feel free to reach out for collaborations, questions, or just to say hello!</p>
             <div class="contact-info">
                 <div class="contact-item">
-                    <strong>Email</strong>
-                    <a href="mailto:contact@ajf.company">contact@ajf.company</a><br>
-                    <br><strong>Phone</strong>
-                    <p style="color: var(--text-secondary);">
-					+48 515 255 095
-					</p>
+                    <strong data-i18n="contact_email">Email</strong>
+                    <a href="mailto:contact@ajf.company">contact@ajf.company</a><br><br>
+                    <strong data-i18n="contact_phone">Phone</strong>
+                    <p style="color: var(--text-secondary);">+48 515 255 095</p>
                 </div>
                 <div class="contact-item">
-                    <strong>Business Information</strong>
+                    <strong data-i18n="contact_business">Business Information</strong>
                     <p style="color: var(--text-secondary);">
-                        ALBEDO JACEK FRANKOWSKI<br>
-                        NIP: 7831626415<br>
-                        REGON: 520321463<br><br>
-                        <strong style="color: var(--primary);">Address</strong>
-                        Rawicka 128, 60-113<br>
-                        Poznań, Poland
+                        ALBEDO JACEK FRANKOWSKI<br>NIP: 7831626415<br>REGON: 520321463<br><br>
+                        <strong style="color: var(--primary);" data-i18n="contact_address">Address</strong><br>
+                        Rawicka 128, 60-113<br>Poznań, Poland
                     </p>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Privacy Policy Section -->
     <section id="privacy">
-        <h2>Privacy Policy</h2>
+        <h2 data-i18n="nav_privacy">Privacy Policy</h2>
         <div class="privacy-content">
-            <p><strong>Last Updated: January 2025</strong></p>
-            
-            <h3>1. Introduction</h3>
-            <p>This privacy policy describes how we collect, use, and protect information when you visit our website.</p>
-
-            <h3>2. Information We Collect</h3>
-            <p>This website does not collect any personal information. We do not use cookies, analytics, or tracking tools.</p>
-
-            <h3>3. How We Use Information</h3>
-            <p>Since we do not collect any personal information, we do not use, store, or share any visitor data.</p>
-
-            <h3>4. Third-Party Services</h3>
-            <p>This website does not use any third-party services, analytics platforms, or advertising networks.</p>
-
-            <h3>5. Data Security</h3>
-            <p>We are committed to ensuring the security of any interaction with our website. This site is hosted on GitHub Pages with HTTPS encryption.</p>
-
-            <h3>6. Your Rights</h3>
-            <p>As we do not collect any personal data, there is no data to access, modify, or delete.</p>
-
-            <h3>7. Changes to This Policy</h3>
-            <p>We may update this privacy policy from time to time. Any changes will be reflected on this page with an updated revision date.</p>
-
-            <h3>8. Contact Us</h3>
-            <p>If you have any questions about this privacy policy, please contact us using the information in the Contact section below.</p>
+            <p><strong data-i18n="priv_updated">Last Updated: January 2025</strong></p>
+            <h3 data-i18n="priv_1_t">1. Introduction</h3>
+            <p data-i18n="priv_1_p">This privacy policy describes how we collect, use, and protect information when you visit our website.</p>
+            <h3 data-i18n="priv_2_t">2. Information We Collect</h3>
+            <p data-i18n="priv_2_p">This website does not collect any personal information. We do not use cookies, analytics, or tracking tools.</p>
+            <h3 data-i18n="priv_3_t">3. How We Use Information</h3>
+            <p data-i18n="priv_3_p">Since we do not collect any personal information, we do not use, store, or share any visitor data.</p>
+            <h3 data-i18n="priv_4_t">4. Third-Party Services</h3>
+            <p data-i18n="priv_4_p">This website does not use any third-party services, analytics platforms, or advertising networks.</p>
+            <h3 data-i18n="priv_5_t">5. Data Security</h3>
+            <p data-i18n="priv_5_p">We are committed to ensuring the security of any interaction with our website. This site is hosted on GitHub Pages with HTTPS encryption.</p>
+            <h3 data-i18n="priv_6_t">6. Your Rights</h3>
+            <p data-i18n="priv_6_p">As we do not collect any personal data, there is no data to access, modify, or delete.</p>
+            <h3 data-i18n="priv_7_t">7. Changes to This Policy</h3>
+            <p data-i18n="priv_7_p">We may update this privacy policy from time to time. Any changes will be reflected on this page with an updated revision date.</p>
+            <h3 data-i18n="priv_8_t">8. Contact Us</h3>
+            <p data-i18n="priv_8_p">If you have any questions about this privacy policy, please contact us using the information in the Contact section below.</p>
         </div>
     </section>
-
-    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 ALBEDO JACEK FRANKOWSKI. All rights reserved.</p>
+        <p data-i18n="footer">© 2025 ALBEDO JACEK FRANKOWSKI. All rights reserved.</p>
     </footer>
+    <script src="translations.js"></script>
+    <script>
+        function setLanguage(lang) {
+            const url = new URL(window.location);
+            url.searchParams.set('lang', lang);
+            window.history.pushState({}, '', url);
+            applyTranslations(lang);
+        }
+        function applyTranslations(lang) {
+            document.documentElement.lang = lang;
+            document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+            document.getElementById('langSelect').value = lang;
+            const t = translations[lang] || translations.en;
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (t[key]) el.textContent = t[key];
+            });
+        }
+        document.addEventListener('DOMContentLoaded', () => {
+            const params = new URLSearchParams(window.location.search);
+            const lang = params.get('lang') || 'en';
+            applyTranslations(lang);
+        });
+    </script>
 </body>
 </html>
