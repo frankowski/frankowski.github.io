@@ -1,0 +1,346 @@
+ACCELERANDO - APP STORE DESCRIPTION TRANSLATIONS
+================================================
+
+=== ENGLISH (Original) ===
+
+Accelerando is a revolutionary music player that automatically adjusts playback speed based on your movement. Perfect for running and other activities.
+
+Features:
+- Real-time music speed adjustment based on GPS
+- Supported audio files: .m4a, .mp3, .flac, .wav, .aiff, .aif, .aifc, .caf, .aac, .mp4, .m4p, .m4b, .3gp, .3g2, .amr, .ac3, .eac3, .mp1, .mp2, .au, .snd
+- Background playback with lock screen controls
+- Simple playlist organization
+- 3 customizable presets (music tempo & movement speed)
+- Speed unit selection
+
+The run, bicycle, and car presets work exactly the same - you can use them for any type of activity.
+
+Whether you're warming up or sprinting, Accelerando keeps your music in sync with your pace!
+
+Do not use this app while driving a vehicle. This application is designed to be used only as a passenger.
+Safety is important.
+
+
+=== ARABIC (العربية) ===
+
+Accelerando هو مشغل موسيقى ثوري يضبط سرعة التشغيل تلقائياً بناءً على حركتك. مثالي للجري والأنشطة الأخرى.
+
+المميزات:
+- ضبط سرعة الموسيقى في الوقت الفعلي بناءً على GPS
+- ملفات الصوت المدعومة: .m4a, .mp3, .flac, .wav, .aiff, .aif, .aifc, .caf, .aac, .mp4, .m4p, .m4b, .3gp, .3g2, .amr, .ac3, .eac3, .mp1, .mp2, .au, .snd
+- التشغيل في الخلفية مع عناصر التحكم في شاشة القفل
+- تنظيم بسيط لقوائم التشغيل
+- 3 إعدادات مسبقة قابلة للتخصيص (إيقاع الموسيقى وسرعة الحركة)
+- اختيار وحدة السرعة
+
+تعمل الإعدادات المسبقة للجري والدراجة والسيارة بنفس الطريقة تماماً - يمكنك استخدامها لأي نوع من الأنشطة.
+
+سواء كنت تقوم بالإحماء أو العدو السريع، يحافظ Accelerando على موسيقاك متزامنة مع وتيرتك!
+
+لا تستخدم هذا التطبيق أثناء قيادة المركبة. تم تصميم هذا التطبيق لاستخدامه كراكب فقط.
+السلامة مهمة.
+
+
+=== CHINESE SIMPLIFIED (简体中文) ===
+
+Accelerando 是一款革命性的音乐播放器，可根据您的移动自动调整播放速度。非常适合跑步和其他活动。
+
+功能特点：
+- 基于 GPS 的实时音乐速度调整
+- 支持的音频文件：.m4a, .mp3, .flac, .wav, .aiff, .aif, .aifc, .caf, .aac, .mp4, .m4p, .m4b, .3gp, .3g2, .amr, .ac3, .eac3, .mp1, .mp2, .au, .snd
+- 后台播放，支持锁屏控制
+- 简单的播放列表管理
+- 3 个可自定义预设（音乐节奏和移动速度）
+- 速度单位选择
+
+跑步、骑行和汽车预设的工作方式完全相同 - 您可以将它们用于任何类型的活动。
+
+无论您是热身还是冲刺，Accelerando 都能让您的音乐与您的节奏保持同步！
+
+驾驶车辆时请勿使用此应用程序。此应用程序仅设计为乘客使用。
+安全很重要。
+
+
+=== DUTCH (Nederlands) ===
+
+Accelerando is een revolutionaire muziekspeler die de afspeelsnelheid automatisch aanpast op basis van je beweging. Perfect voor hardlopen en andere activiteiten.
+
+Kenmerken:
+- Real-time muzieksnelheid aanpassing op basis van GPS
+- Ondersteunde audiobestanden: .m4a, .mp3, .flac, .wav, .aiff, .aif, .aifc, .caf, .aac, .mp4, .m4p, .m4b, .3gp, .3g2, .amr, .ac3, .eac3, .mp1, .mp2, .au, .snd
+- Achtergrond afspelen met vergrendelscherm bediening
+- Eenvoudige afspeellijst organisatie
+- 3 aanpasbare presets (muziektempo & bewegingssnelheid)
+- Snelheidseenheid selectie
+
+De hardloop-, fiets- en auto-presets werken precies hetzelfde - je kunt ze gebruiken voor elk type activiteit.
+
+Of je nu aan het opwarmen bent of aan het sprinten, Accelerando houdt je muziek gesynchroniseerd met je tempo!
+
+Gebruik deze app niet tijdens het besturen van een voertuig. Deze applicatie is ontworpen om alleen als passagier te worden gebruikt.
+Veiligheid is belangrijk.
+
+
+=== FRENCH (Français) ===
+
+Accelerando est un lecteur de musique révolutionnaire qui ajuste automatiquement la vitesse de lecture en fonction de vos mouvements. Parfait pour la course et autres activités.
+
+Fonctionnalités :
+- Ajustement de la vitesse de la musique en temps réel basé sur le GPS
+- Fichiers audio pris en charge : .m4a, .mp3, .flac, .wav, .aiff, .aif, .aifc, .caf, .aac, .mp4, .m4p, .m4b, .3gp, .3g2, .amr, .ac3, .eac3, .mp1, .mp2, .au, .snd
+- Lecture en arrière-plan avec contrôles sur l'écran de verrouillage
+- Organisation simple des listes de lecture
+- 3 préréglages personnalisables (tempo musical et vitesse de mouvement)
+- Sélection de l'unité de vitesse
+
+Les préréglages course, vélo et voiture fonctionnent exactement de la même manière - vous pouvez les utiliser pour tout type d'activité.
+
+Que vous vous échauffiez ou sprintiez, Accelerando garde votre musique synchronisée avec votre rythme !
+
+N'utilisez pas cette application en conduisant un véhicule. Cette application est conçue pour être utilisée uniquement en tant que passager.
+La sécurité est importante.
+
+
+=== GERMAN (Deutsch) ===
+
+Accelerando ist ein revolutionärer Musikplayer, der die Wiedergabegeschwindigkeit automatisch an Ihre Bewegung anpasst. Perfekt zum Laufen und für andere Aktivitäten.
+
+Funktionen:
+- Echtzeit-Musikgeschwindigkeitsanpassung basierend auf GPS
+- Unterstützte Audiodateien: .m4a, .mp3, .flac, .wav, .aiff, .aif, .aifc, .caf, .aac, .mp4, .m4p, .m4b, .3gp, .3g2, .amr, .ac3, .eac3, .mp1, .mp2, .au, .snd
+- Hintergrundwiedergabe mit Sperrbildschirm-Steuerung
+- Einfache Playlist-Organisation
+- 3 anpassbare Voreinstellungen (Musiktempo & Bewegungsgeschwindigkeit)
+- Geschwindigkeitseinheit-Auswahl
+
+Die Voreinstellungen für Laufen, Fahrrad und Auto funktionieren genau gleich - Sie können sie für jede Art von Aktivität verwenden.
+
+Egal ob Sie sich aufwärmen oder sprinten, Accelerando hält Ihre Musik im Einklang mit Ihrem Tempo!
+
+Verwenden Sie diese App nicht beim Fahren eines Fahrzeugs. Diese Anwendung ist nur für die Nutzung als Beifahrer konzipiert.
+Sicherheit ist wichtig.
+
+
+=== HINDI (हिन्दी) ===
+
+Accelerando एक क्रांतिकारी संगीत प्लेयर है जो आपकी गति के आधार पर प्लेबैक स्पीड को स्वचालित रूप से समायोजित करता है। दौड़ने और अन्य गतिविधियों के लिए बिल्कुल सही।
+
+विशेषताएं:
+- GPS के आधार पर रियल-टाइम संगीत गति समायोजन
+- समर्थित ऑडियो फ़ाइलें: .m4a, .mp3, .flac, .wav, .aiff, .aif, .aifc, .caf, .aac, .mp4, .m4p, .m4b, .3gp, .3g2, .amr, .ac3, .eac3, .mp1, .mp2, .au, .snd
+- लॉक स्क्रीन नियंत्रण के साथ बैकग्राउंड प्लेबैक
+- सरल प्लेलिस्ट संगठन
+- 3 अनुकूलन योग्य प्रीसेट (संगीत टेम्पो और गति स्पीड)
+- स्पीड यूनिट चयन
+
+दौड़, साइकिल और कार प्रीसेट बिल्कुल समान काम करते हैं - आप उन्हें किसी भी प्रकार की गतिविधि के लिए उपयोग कर सकते हैं।
+
+चाहे आप वार्म-अप कर रहे हों या स्प्रिंटिंग, Accelerando आपके संगीत को आपकी गति के साथ सिंक में रखता है!
+
+वाहन चलाते समय इस ऐप का उपयोग न करें। यह एप्लिकेशन केवल यात्री के रूप में उपयोग के लिए डिज़ाइन किया गया है।
+सुरक्षा महत्वपूर्ण है।
+
+
+=== ITALIAN (Italiano) ===
+
+Accelerando è un lettore musicale rivoluzionario che regola automaticamente la velocità di riproduzione in base al tuo movimento. Perfetto per la corsa e altre attività.
+
+Caratteristiche:
+- Regolazione della velocità musicale in tempo reale basata su GPS
+- File audio supportati: .m4a, .mp3, .flac, .wav, .aiff, .aif, .aifc, .caf, .aac, .mp4, .m4p, .m4b, .3gp, .3g2, .amr, .ac3, .eac3, .mp1, .mp2, .au, .snd
+- Riproduzione in background con controlli dalla schermata di blocco
+- Organizzazione semplice delle playlist
+- 3 preset personalizzabili (tempo musicale e velocità di movimento)
+- Selezione dell'unità di velocità
+
+I preset corsa, bicicletta e auto funzionano esattamente allo stesso modo - puoi usarli per qualsiasi tipo di attività.
+
+Che tu stia riscaldando o sprintando, Accelerando mantiene la tua musica sincronizzata con il tuo ritmo!
+
+Non utilizzare questa app durante la guida di un veicolo. Questa applicazione è progettata per essere utilizzata solo come passeggero.
+La sicurezza è importante.
+
+
+=== JAPANESE (日本語) ===
+
+Accelerandoは、動きに基づいて再生速度を自動的に調整する革新的な音楽プレーヤーです。ランニングやその他のアクティビティに最適です。
+
+機能：
+- GPSに基づくリアルタイム音楽速度調整
+- サポートされているオーディオファイル：.m4a, .mp3, .flac, .wav, .aiff, .aif, .aifc, .caf, .aac, .mp4, .m4p, .m4b, .3gp, .3g2, .amr, .ac3, .eac3, .mp1, .mp2, .au, .snd
+- ロック画面コントロール付きバックグラウンド再生
+- シンプルなプレイリスト管理
+- 3つのカスタマイズ可能なプリセット（音楽テンポと移動速度）
+- 速度単位の選択
+
+ランニング、自転車、車のプリセットはまったく同じように機能します - あらゆる種類のアクティビティに使用できます。
+
+ウォームアップ中でもスプリント中でも、Accelerandoは音楽をあなたのペースに同期させます！
+
+車両の運転中にこのアプリを使用しないでください。このアプリケーションは乗客としてのみ使用するように設計されています。
+安全は重要です。
+
+
+=== KOREAN (한국어) ===
+
+Accelerando는 움직임에 따라 재생 속도를 자동으로 조정하는 혁신적인 음악 플레이어입니다. 달리기 및 기타 활동에 완벽합니다.
+
+기능:
+- GPS 기반 실시간 음악 속도 조정
+- 지원되는 오디오 파일: .m4a, .mp3, .flac, .wav, .aiff, .aif, .aifc, .caf, .aac, .mp4, .m4p, .m4b, .3gp, .3g2, .amr, .ac3, .eac3, .mp1, .mp2, .au, .snd
+- 잠금 화면 컨트롤이 있는 백그라운드 재생
+- 간단한 재생 목록 구성
+- 3개의 사용자 정의 가능한 프리셋 (음악 템포 및 이동 속도)
+- 속도 단위 선택
+
+달리기, 자전거, 자동차 프리셋은 정확히 동일하게 작동합니다 - 모든 유형의 활동에 사용할 수 있습니다.
+
+워밍업 중이든 스프린트 중이든 Accelerando는 음악을 페이스와 동기화합니다!
+
+차량 운전 중에는 이 앱을 사용하지 마십시오. 이 애플리케이션은 승객으로만 사용하도록 설계되었습니다.
+안전이 중요합니다.
+
+
+=== POLISH (Polski) ===
+
+Accelerando to rewolucyjny odtwarzacz muzyki, który automatycznie dostosowuje prędkość odtwarzania w oparciu o Twój ruch. Idealny do biegania i innych aktywności.
+
+Funkcje:
+- Dostosowanie prędkości muzyki w czasie rzeczywistym w oparciu o GPS
+- Obsługiwane pliki audio: .m4a, .mp3, .flac, .wav, .aiff, .aif, .aifc, .caf, .aac, .mp4, .m4p, .m4b, .3gp, .3g2, .amr, .ac3, .eac3, .mp1, .mp2, .au, .snd
+- Odtwarzanie w tle z kontrolą na ekranie blokady
+- Prosta organizacja playlist
+- 3 konfigurowalne ustawienia (tempo muzyki i prędkość ruchu)
+- Wybór jednostki prędkości
+
+Ustawienia biegu, roweru i samochodu działają dokładnie tak samo - możesz ich używać do każdego rodzaju aktywności.
+
+Niezależnie od tego, czy się rozgrzewasz, czy sprintujesz, Accelerando utrzymuje Twoją muzykę zsynchronizowaną z Twoim tempem!
+
+Nie używaj tej aplikacji podczas prowadzenia pojazdu. Ta aplikacja została zaprojektowana do użytku wyłącznie jako pasażer.
+Bezpieczeństwo jest ważne.
+
+
+=== PORTUGUESE BRAZIL (Português - Brasil) ===
+
+Accelerando é um reprodutor de música revolucionário que ajusta automaticamente a velocidade de reprodução com base no seu movimento. Perfeito para corrida e outras atividades.
+
+Recursos:
+- Ajuste de velocidade de música em tempo real baseado em GPS
+- Arquivos de áudio suportados: .m4a, .mp3, .flac, .wav, .aiff, .aif, .aifc, .caf, .aac, .mp4, .m4p, .m4b, .3gp, .3g2, .amr, .ac3, .eac3, .mp1, .mp2, .au, .snd
+- Reprodução em segundo plano com controles na tela de bloqueio
+- Organização simples de playlist
+- 3 predefinições personalizáveis (andamento musical e velocidade de movimento)
+- Seleção de unidade de velocidade
+
+As predefinições de corrida, bicicleta e carro funcionam exatamente da mesma forma - você pode usá-las para qualquer tipo de atividade.
+
+Seja aquecendo ou fazendo sprint, Accelerando mantém sua música sincronizada com seu ritmo!
+
+Não use este aplicativo enquanto estiver dirigindo um veículo. Este aplicativo foi projetado para ser usado apenas como passageiro.
+A segurança é importante.
+
+
+=== PORTUGUESE PORTUGAL (Português - Portugal) ===
+
+Accelerando é um leitor de música revolucionário que ajusta automaticamente a velocidade de reprodução com base no seu movimento. Perfeito para corrida e outras atividades.
+
+Funcionalidades:
+- Ajuste de velocidade de música em tempo real baseado em GPS
+- Ficheiros de áudio suportados: .m4a, .mp3, .flac, .wav, .aiff, .aif, .aifc, .caf, .aac, .mp4, .m4p, .m4b, .3gp, .3g2, .amr, .ac3, .eac3, .mp1, .mp2, .au, .snd
+- Reprodução em segundo plano com controlos no ecrã de bloqueio
+- Organização simples de lista de reprodução
+- 3 predefinições personalizáveis (andamento musical e velocidade de movimento)
+- Seleção de unidade de velocidade
+
+As predefinições de corrida, bicicleta e carro funcionam exatamente da mesma forma - pode usá-las para qualquer tipo de atividade.
+
+Quer esteja a aquecer ou a fazer sprint, Accelerando mantém a sua música sincronizada com o seu ritmo!
+
+Não utilize esta aplicação enquanto conduz um veículo. Esta aplicação foi concebida para ser utilizada apenas como passageiro.
+A segurança é importante.
+
+
+=== RUSSIAN (Русский) ===
+
+Accelerando — это революционный музыкальный плеер, который автоматически регулирует скорость воспроизведения в зависимости от вашего движения. Идеально подходит для бега и других занятий.
+
+Возможности:
+- Регулировка скорости музыки в реальном времени на основе GPS
+- Поддерживаемые аудиофайлы: .m4a, .mp3, .flac, .wav, .aiff, .aif, .aifc, .caf, .aac, .mp4, .m4p, .m4b, .3gp, .3g2, .amr, .ac3, .eac3, .mp1, .mp2, .au, .snd
+- Фоновое воспроизведение с элементами управления на экране блокировки
+- Простая организация плейлистов
+- 3 настраиваемых пресета (темп музыки и скорость движения)
+- Выбор единицы измерения скорости
+
+Пресеты для бега, велосипеда и автомобиля работают совершенно одинаково - вы можете использовать их для любого типа активности.
+
+Будь то разминка или спринт, Accelerando синхронизирует вашу музыку с вашим темпом!
+
+Не используйте это приложение во время управления транспортным средством. Это приложение предназначено для использования только в качестве пассажира.
+Безопасность важна.
+
+
+=== SPANISH (Español) ===
+
+Accelerando es un reproductor de música revolucionario que ajusta automáticamente la velocidad de reproducción según tu movimiento. Perfecto para correr y otras actividades.
+
+Características:
+- Ajuste de velocidad de música en tiempo real basado en GPS
+- Archivos de audio compatibles: .m4a, .mp3, .flac, .wav, .aiff, .aif, .aifc, .caf, .aac, .mp4, .m4p, .m4b, .3gp, .3g2, .amr, .ac3, .eac3, .mp1, .mp2, .au, .snd
+- Reproducción en segundo plano con controles en pantalla de bloqueo
+- Organización simple de listas de reproducción
+- 3 ajustes preestablecidos personalizables (tempo musical y velocidad de movimiento)
+- Selección de unidad de velocidad
+
+Los ajustes preestablecidos de carrera, bicicleta y coche funcionan exactamente igual - puedes usarlos para cualquier tipo de actividad.
+
+Ya sea que estés calentando o haciendo sprint, Accelerando mantiene tu música sincronizada con tu ritmo!
+
+No uses esta aplicación mientras conduces un vehículo. Esta aplicación está diseñada para ser usada solo como pasajero.
+La seguridad es importante.
+
+
+=== SPANISH LATIN AMERICA (Español - América Latina) ===
+
+Accelerando es un reproductor de música revolucionario que ajusta automáticamente la velocidad de reproducción según tu movimiento. Perfecto para correr y otras actividades.
+
+Características:
+- Ajuste de velocidad de música en tiempo real basado en GPS
+- Archivos de audio compatibles: .m4a, .mp3, .flac, .wav, .aiff, .aif, .aifc, .caf, .aac, .mp4, .m4p, .m4b, .3gp, .3g2, .amr, .ac3, .eac3, .mp1, .mp2, .au, .snd
+- Reproducción en segundo plano con controles en pantalla de bloqueo
+- Organización simple de listas de reproducción
+- 3 ajustes preestablecidos personalizables (tempo musical y velocidad de movimiento)
+- Selección de unidad de velocidad
+
+Los ajustes preestablecidos de carrera, bicicleta y auto funcionan exactamente igual - puedes usarlos para cualquier tipo de actividad.
+
+Ya sea que estés calentando o haciendo sprint, Accelerando mantiene tu música sincronizada con tu ritmo!
+
+No uses esta app mientras manejas un vehículo. Esta aplicación está diseñada para ser usada solo como pasajero.
+La seguridad es importante.
+
+
+=== SWEDISH (Svenska) ===
+
+Accelerando är en revolutionerande musikspelare som automatiskt justerar uppspelningshastigheten baserat på din rörelse. Perfekt för löpning och andra aktiviteter.
+
+Funktioner:
+- Realtids musikhastighetsjustering baserad på GPS
+- Stödda ljudfiler: .m4a, .mp3, .flac, .wav, .aiff, .aif, .aifc, .caf, .aac, .mp4, .m4p, .m4b, .3gp, .3g2, .amr, .ac3, .eac3, .mp1, .mp2, .au, .snd
+- Bakgrundsuppspelning med låsskärmskontroller
+- Enkel spellisteorganisering
+- 3 anpassningsbara förinställningar (musiktempo & rörelsehastighet)
+- Val av hastighetsenhet
+
+Förinställningarna för löpning, cykel och bil fungerar exakt likadant - du kan använda dem för vilken typ av aktivitet som helst.
+
+Oavsett om du värmer upp eller sprintar håller Accelerando din musik synkroniserad med ditt tempo!
+
+Använd inte den här appen när du kör ett fordon. Denna applikation är utformad för att endast användas som passagerare.
+Säkerhet är viktigt.
+
+
+================================================
+END OF TRANSLATIONS
+================================================
