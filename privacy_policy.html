@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJF Software - Privacy Policy</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --primary: #667eea; --secondary: #764ba2; --dark: #1a202c; --light: #f7fafc;
+            --gray: #4a5568; --bg-primary: #ffffff; --bg-secondary: #f7fafc;
+            --text-primary: #1a202c; --text-secondary: #4a5568;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --dark: #f7fafc; --light: #1a202c; --gray: #a0aec0;
+                --bg-primary: #1a202c; --bg-secondary: #2d3748;
+                --text-primary: #f7fafc; --text-secondary: #a0aec0;
+            }
+        }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', sans-serif;
+            line-height: 1.6; color: var(--text-primary); background: var(--bg-secondary); padding: 2rem;
+        }
+        html[dir="rtl"] body { text-align: right; }
+        html[dir="rtl"] .privacy-content ul { margin-left: 0; margin-right: 2rem; }
+        section { max-width: 900px; margin: 0 auto; }
+        .privacy-content {
+            background: var(--bg-primary); padding: 3rem; border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        @media (prefers-color-scheme: dark) { .privacy-content { box-shadow: 0 4px 20px rgba(0,0,0,0.4); } }
+        .privacy-content h1 { color: var(--primary); font-size: 2.5rem; margin-bottom: 2rem; }
+        .privacy-content h2 { color: var(--primary); margin-top: 2.5rem; margin-bottom: 1rem; font-size: 1.8rem; }
+        .privacy-content h3 { color: var(--text-primary); margin-top: 1.5rem; margin-bottom: 0.8rem; font-size: 1.3rem; }
+        .privacy-content p { color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.8; }
+        .privacy-content ul { margin: 1rem 0 1.5rem 2rem; color: var(--text-secondary); line-height: 1.8; }
+        .privacy-content li { margin-bottom: 0.5rem; }
+        .privacy-content strong { color: var(--text-primary); }
+        .privacy-content a { color: var(--primary); text-decoration: none; transition: opacity 0.3s; }
+        .privacy-content a:hover { opacity: 0.8; }
+        .language-switcher {
+            position: fixed; top: 1rem; right: 1rem; z-index: 1000;
+        }
+        .language-switcher select {
+            appearance: none; background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white; border: none; padding: 0.5rem 2rem 0.5rem 1rem; border-radius: 8px;
+            font-size: 0.9rem; font-weight: 500; cursor: pointer;
+        }
+        .language-switcher::after {
+            content: '▼'; position: absolute; right: 0.7rem; top: 50%; transform: translateY(-50%);
+            color: white; font-size: 0.6rem; pointer-events: none;
+        }
+        .language-switcher select option {
+        background: var(--bg-primary);
+        color: var(--text-primary);
+        }
+        @media (max-width: 768px) {
+            body { padding: 1rem; padding-top: 4rem; }
+            .privacy-content { padding: 2rem; }
+            .privacy-content h1 { font-size: 2rem; }
+            .privacy-content h2 { font-size: 1.5rem; }
+            .privacy-content h3 { font-size: 1.2rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="language-switcher">
+        <select id="langSelect" onchange="setLanguage(this.value)">
+            <option value="en">English</option>
+            <option value="ar">العربية</option>
+            <option value="zh">中文</option>
+            <option value="nl">Nederlands</option>
+            <option value="fr">Français</option>
+            <option value="de">Deutsch</option>
+            <option value="hi">हिन्दी</option>
+            <option value="it">Italiano</option>
+            <option value="ja">日本語</option>
+            <option value="ko">한국어</option>
+            <option value="pl">Polski</option>
+            <option value="pt-BR">Português (BR)</option>
+            <option value="pt-PT">Português (PT)</option>
+            <option value="ru">Русский</option>
+            <option value="es">Español</option>
+            <option value="es-LA">Español (LA)</option>
+            <option value="sv">Svenska</option>
+        </select>
+    </div>
+    <section>
+        <div class="privacy-content">
+            <h1 data-i18n="nav_privacy">Privacy Policy</h1>
+            <p><strong data-i18n="priv_updated">Last Updated: January 2025</strong></p>
+            <h3 data-i18n="priv_1_t">1. Introduction</h3>
+            <p data-i18n="priv_1_p">This privacy policy describes how we collect, use, and protect information when you visit our website.</p>
+            <h3 data-i18n="priv_2_t">2. Information We Collect</h3>
+            <p data-i18n="priv_2_p">This website does not collect any personal information. We do not use cookies, analytics, or tracking tools.</p>
+            <h3 data-i18n="priv_3_t">3. How We Use Information</h3>
+            <p data-i18n="priv_3_p">Since we do not collect any personal information, we do not use, store, or share any visitor data.</p>
+            <h3 data-i18n="priv_4_t">4. Third-Party Services</h3>
+            <p data-i18n="priv_4_p">This website does not use any third-party services, analytics platforms, or advertising networks.</p>
+            <h3 data-i18n="priv_5_t">5. Data Security</h3>
+            <p data-i18n="priv_5_p">We are committed to ensuring the security of any interaction with our website. This site is hosted on GitHub Pages with HTTPS encryption.</p>
+            <h3 data-i18n="priv_6_t">6. Your Rights</h3>
+            <p data-i18n="priv_6_p">As we do not collect any personal data, there is no data to access, modify, or delete.</p>
+            <h3 data-i18n="priv_7_t">7. Changes to This Policy</h3>
+            <p data-i18n="priv_7_p">We may update this privacy policy from time to time. Any changes will be reflected on this page with an updated revision date.</p>
+            <h3 data-i18n="priv_8_t">8. Contact Us</h3>
+            <p data-i18n="priv_8_p">If you have any questions about this privacy policy, please contact us using the information in the Contact section below.</p>
+        </div>
+    </section>
+    <script src="translations.js"></script>
+    <script>
+        function setLanguage(lang) {
+            const url = new URL(window.location);
+            url.searchParams.set('lang', lang);
+            window.history.pushState({}, '', url);
+            applyTranslations(lang);
+        }
+        function applyTranslations(lang) {
+            document.documentElement.lang = lang;
+            document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+            document.getElementById('langSelect').value = lang;
+            const t = translations[lang] || translations.en;
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (t[key]) el.textContent = t[key];
+            });
+        }
+        document.addEventListener('DOMContentLoaded', () => {
+            const params = new URLSearchParams(window.location.search);
+            const lang = params.get('lang') || 'en';
+            applyTranslations(lang);
+        });
+    </script>
+</body>
+</html>
