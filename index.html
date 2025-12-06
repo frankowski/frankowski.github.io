@@ -101,6 +101,9 @@
         .contact-item a:hover { color: var(--primary); }
         footer { background: #1a202c; color: #f7fafc; text-align: center; padding: 2rem; }
         @media (prefers-color-scheme: dark) { footer { background: #0d1117; } }
+        footer p { margin: 0.5rem 0; }
+        footer a { transition: opacity 0.3s; }
+        footer a:hover { opacity: 0.8; }
         @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
         @media (max-width: 768px) {
             .hero h1 { font-size: 2.5rem; } .hero p { font-size: 1.1rem; }
@@ -221,33 +224,16 @@
             </div>
         </div>
     </section>
-    <section id="privacy">
-        <h2 data-i18n="nav_privacy">Privacy Policy</h2>
-        <div class="privacy-content">
-            <p><strong data-i18n="priv_updated">Last Updated: January 2025</strong></p>
-            <h3 data-i18n="priv_1_t">1. Introduction</h3>
-            <p data-i18n="priv_1_p">This privacy policy describes how we collect, use, and protect information when you visit our website.</p>
-            <h3 data-i18n="priv_2_t">2. Information We Collect</h3>
-            <p data-i18n="priv_2_p">This website does not collect any personal information. We do not use cookies, analytics, or tracking tools.</p>
-            <h3 data-i18n="priv_3_t">3. How We Use Information</h3>
-            <p data-i18n="priv_3_p">Since we do not collect any personal information, we do not use, store, or share any visitor data.</p>
-            <h3 data-i18n="priv_4_t">4. Third-Party Services</h3>
-            <p data-i18n="priv_4_p">This website does not use any third-party services, analytics platforms, or advertising networks.</p>
-            <h3 data-i18n="priv_5_t">5. Data Security</h3>
-            <p data-i18n="priv_5_p">We are committed to ensuring the security of any interaction with our website. This site is hosted on GitHub Pages with HTTPS encryption.</p>
-            <h3 data-i18n="priv_6_t">6. Your Rights</h3>
-            <p data-i18n="priv_6_p">As we do not collect any personal data, there is no data to access, modify, or delete.</p>
-            <h3 data-i18n="priv_7_t">7. Changes to This Policy</h3>
-            <p data-i18n="priv_7_p">We may update this privacy policy from time to time. Any changes will be reflected on this page with an updated revision date.</p>
-            <h3 data-i18n="priv_8_t">8. Contact Us</h3>
-            <p data-i18n="priv_8_p">If you have any questions about this privacy policy, please contact us using the information in the Contact section below.</p>
-        </div>
-    </section>
     <footer>
         <p data-i18n="footer">© 2025 ALBEDO JACEK FRANKOWSKI. All rights reserved.</p>
+        <p><a href="#" onclick="goToPrivacyPolicy(); return false;" style="color: var(--primary); text-decoration: none; cursor: pointer;" data-i18n="nav_privacy">Privacy Policy</a></p>
     </footer>
     <script src="translations.js"></script>
     <script>
+        function goToPrivacyPolicy() {
+            const currentLang = document.getElementById('langSelect').value;
+            window.location.href = 'privacy_policy.html?lang=' + currentLang;
+        }
         function setLanguage(lang) {
             const url = new URL(window.location);
             url.searchParams.set('lang', lang);
